@@ -77,16 +77,16 @@
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
     <state world_name='default'>
-      <sim_time>622 492000000</sim_time>
-      <real_time>435 113185047</real_time>
-      <wall_time>1490198904 423514238</wall_time>
+      <sim_time>10183 83000000</sim_time>
+      <real_time>9568 145192899</real_time>
+      <wall_time>1490212490 639932105</wall_time>
       <model name='LQ01s'>
-        <pose>0.097085 0.000459 0.119283 0 0.747809 0.006105</pose>
+        <pose>0.097112 0.000458 0.119276 -3e-06 0.747791 0.006366</pose>
         <link name='base_link'>
-          <pose>0.097085 0.000459 0.119283 0 0.747809 0.006105</pose>
-          <velocity>0.001953 0.000143 0.008133 -0.001203 0.016374 0</velocity>
-          <acceleration>3.5555 0.261227 16.0608 -0.017647 0.262993 -0.000768</acceleration>
-          <wrench>5.96612 0.438339 26.95 0 -0 0</wrench>
+          <pose>0.097112 0.000458 0.119276 -3e-06 0.747791 0.006366</pose>
+          <velocity>-0.002131 0.000299 -0.006709 -0.002505 -0.017868 0</velocity>
+          <acceleration>0 0 -9.8 0 -0 0</acceleration>
+          <wrench>0 0 -16.4444 0 -0 0</wrench>
         </link>
       </model>
       <model name='ground_plane'>
@@ -101,7 +101,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>-0.044565 -0.111719 0.530833 0 1.47779 0.032157</pose>
+        <pose>-2.8766 -1.31812 3.94295 4.3238e-17 0.87379 0.628159</pose>
         <view_controller>orbit</view_controller>
       </camera>
     </gui>
