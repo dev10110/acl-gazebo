@@ -7,7 +7,7 @@
    <arg name="y" default="0.0"/>
    <arg name="z" default="0.3"/>
 
-   <include file="$(find acl_sim)/launch/spawn_quadrotor.launch">
+   <include ns="$(arg name)" file="$(find acl_sim)/launch/spawn_quadrotor.launch">
      <arg name="name" default="$(arg name)"/>
      <arg name="model" value="$(find acl_sim)/urdf/quadrotor_with_asus.gazebo.xacro"/>
      <arg name="tf_prefix" default="$(arg tf_prefix)"/>
