@@ -18,7 +18,7 @@
 
        <!-- Sonar height sensor -->
     <xacro:include filename="$(find acl_sim)/urdf/sonar_sensor.urdf.xacro" /> 
-    <xacro:sonar_sensor name="sonar" parent="base_link" >
+    <xacro:sonar_sensor name="lidar" parent="base_link" >
       <origin xyz="-0.065 -0.06 -0.015" rpy="0 ${90*pi/180} 0"/>
     </xacro:sonar_sensor>
     
