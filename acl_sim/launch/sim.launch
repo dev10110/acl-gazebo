@@ -1,5 +1,4 @@
 <launch>
-
 	<arg name="quad" default="LQ01s"/>
 	<arg name="x" default="0.0"/>
 	<arg name="y" default="0.0"/>
