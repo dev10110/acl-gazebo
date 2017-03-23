@@ -81,14 +81,19 @@ void GazeboRosSonar::Load(sensors::SensorPtr _sensor, sdf::ElementPtr _sdf)
   // default parameters
   namespace_.clear();
   topic_ = "sonar";
-  frame_id_ = "/sonar_link";
+  frame_id_ = "sonar_link";
 
-  // load parameters
-  if (_sdf->HasElement("robotNamespace"))
-    namespace_ = _sdf->GetElement("robotNamespace")->GetValue()->GetAsString();
-
+   // load parameters
   if (_sdf->HasElement("frameId"))
     frame_id_ = _sdf->GetElement("frameId")->GetValue()->GetAsString();
+
+  if (_sdf->HasElement("robotNamespace")){
+    namespace_ = _sdf->GetElement("robotNamespace")->GetValue()->GetAsString();
+    namespace_.erase(0,1);
+    frame_id_ = namespace_ + frame_id_;
+  }
+
+
 
   if (_sdf->HasElement("topicName"))
     topic_ = _sdf->GetElement("topicName")->GetValue()->GetAsString();
