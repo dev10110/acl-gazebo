@@ -59,10 +59,10 @@
             <resolution>0.01</resolution>
           </range>
         </ray>
-        <plugin name="gazebo_ros_${name}_controller" filename="libgazebo_ros_sonar.so">
+        <plugin name="${name}_lidar_controller" filename="libgazebo_ros_sonar.so">
           <gaussianNoise>0.005</gaussianNoise>
-          <topicName>sonar_height</topicName>
-          <frameId>${name}_link</frameId>
+          <topicName>lidar</topicName>
+          <frameId>${name}</frameId>
         </plugin>
       </sensor>
     </gazebo>

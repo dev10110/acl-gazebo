@@ -28,4 +28,5 @@
 
 </launch>
 
-rosrun gazebo_ros spawn_model -file `rospack find acl_sim`/models/cylinder/model.sdf -sdf -x 1 -y 1 -z 0 -model obst2
+<!-- rosrun gazebo_ros spawn_model -file `rospack find acl_sim`/models/cylinder/model.sdf -sdf -x 1 -y 1 -z 0 -model obst2
+ -->
