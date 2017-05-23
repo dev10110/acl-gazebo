@@ -85,14 +85,14 @@
       <model name="forest">
         <include>
           <static>true</static>
-          <uri>/home/brett/acl_ws/src/acl-ros-extra-v2/acl_sim/models/cylinder</uri>
+          <uri>/home/boeing/boeing_ws/src/acl-ros-extra-v2/acl_sim/models/cylinder</uri>
         </include>
        </model>
       <pose>30 0 0 0 0 0</pose>
       <box>
         <size>50 10 0.01</size>
       </box>
-      <model_count>50</model_count> 
+      <model_count>100</model_count> 
       <distribution>
         <type>random</type>
       </distribution>
