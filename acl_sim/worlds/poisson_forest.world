@@ -85,14 +85,32 @@
       <model name="forest">
         <include>
           <static>true</static>
-          <uri>/home/boeing/acl_ws/src/acl-ros-extra-v2/acl_sim/models/cylinder</uri>
+          <uri>/home/brett/acl_ws/src/acl-ros-extra-v2/acl_sim/models/cylinder</uri>
         </include>
        </model>
-      <pose>30 0 0 0 0 0</pose>
+      <pose>10 0 0 0 0 0</pose>
       <box>
-        <size>50 10 0.01</size>
+        <size>40 20 0.01</size>
       </box>
-      <model_count>100</model_count> 
+      <model_count>150</model_count> 
+      <distribution>
+        <type>random</type>
+      </distribution>
+    </population>
+
+    <!-- Testing the automatic population of objects -->
+    <population name="forest_pop_2">
+      <model name="forest_2">
+        <include>
+          <static>true</static>
+          <uri>/home/brett/acl_ws/src/acl-ros-extra-v2/acl_sim/models/cylinder</uri>
+        </include>
+       </model>
+      <pose>65 0 0 0 0 0</pose>
+      <box>
+        <size>40 20 0.01</size>
+      </box>
+      <model_count>75</model_count> 
       <distribution>
         <type>random</type>
       </distribution>
