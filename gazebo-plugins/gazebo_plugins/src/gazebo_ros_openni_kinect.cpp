@@ -99,7 +99,7 @@ void GazeboRosOpenniKinect::Load(sensors::SensorPtr _parent, sdf::ElementPtr _sd
   else
     this->point_cloud_cutoff_ = _sdf->GetElement("pointCloudCutoff")->Get<double>();
   if (!_sdf->HasElement("pointCloudCutoffMax"))
-    this->point_cloud_cutoff_max_ = 20.0;
+    this->point_cloud_cutoff_max_ = 12.0;
   else
     this->point_cloud_cutoff_max_ = _sdf->GetElement("pointCloudCutoffMax")->Get<double>();
 
