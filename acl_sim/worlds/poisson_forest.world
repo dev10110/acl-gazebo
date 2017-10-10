@@ -88,7 +88,7 @@
           <uri>/home/brett/acl_ws/src/acl-ros-extra-v2/acl_sim/models/cylinder</uri>
         </include>
        </model>
-      <pose>10 0 0 0 0 0</pose>
+      <pose>0 0 0 0 0 0</pose>
       <box>
         <size>40 20 0.01</size>
       </box>
@@ -106,7 +106,7 @@
           <uri>/home/brett/acl_ws/src/acl-ros-extra-v2/acl_sim/models/cylinder</uri>
         </include>
        </model>
-      <pose>65 0 0 0 0 0</pose>
+      <pose>70 0 0 0 0 0</pose>
       <box>
         <size>40 20 0.01</size>
       </box>
