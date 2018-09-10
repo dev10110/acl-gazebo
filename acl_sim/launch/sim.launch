@@ -14,4 +14,9 @@
 		<arg name="debug" value="false"/>
 	</include>
 
+	      <!-- Ensure RosBag is saving important data -->
+<!--          <node ns="$(arg quad)" pkg="rosbag" type="record" name="rosbag_record" args="-o $(env HOME)/Desktop/bags/$(arg world_name) log_topic goal joy vicon cmds cmds_att /tf"/> -->
+<!--          <node ns="$(arg quad)" pkg="rosbag" type="record" name="rosbag_record" args="-o $(env HOME)/Desktop/bags/$(arg world_name) -a"/> -->
+
+
 </launch>
