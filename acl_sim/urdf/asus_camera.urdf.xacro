@@ -95,12 +95,12 @@
               <format>R8G8B8</format>
 <!--               <width>120</width>
               <height>90</height> -->
-              <width>320</width>
-              <height>240</height>
+              <width>1280</width>
+              <height>720</height>
             </image>
             <clip>
               <near>0.15</near>
-              <far>10</far>
+              <far>50</far>
             </clip>
           </camera>
           <plugin name="${name}_camera_controller" filename="libgazebo_ros_openni_kinect.so">
