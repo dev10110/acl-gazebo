@@ -1,5 +1,6 @@
 <sdf version='1.6'>
-  <world name='default'>
+    <world name='default'>
+   <plugin name="disable_physics" filename="libdisable_physics.so"/>
     <scene>
       <sky>
         <clouds>

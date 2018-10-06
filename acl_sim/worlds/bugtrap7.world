@@ -79,16 +79,16 @@
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
     <state world_name='default'>
-      <sim_time>12739 954000000</sim_time>
-      <real_time>223 883775705</real_time>
-      <wall_time>1536514509 577712344</wall_time>
-      <iterations>221922</iterations>
+      <sim_time>11217 306000000</sim_time>
+      <real_time>104 797351437</real_time>
+      <wall_time>1536511038 146031981</wall_time>
+      <iterations>104495</iterations>
       <model name='SQ01s'>
-        <pose frame=''>40.3644 0.224805 0.294434 -0.024928 -0.026042 -0.504145</pose>
+        <pose frame=''>0 0 -1.02405 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='base_link'>
-          <pose frame=''>40.3644 0.224805 0.294434 -0.024928 -0.026042 -0.504145</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
+          <pose frame=''>0 0 -1.02405 0 -0 0</pose>
+          <velocity>0 0 -0.0098 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
@@ -98,6 +98,46 @@
         <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>0 0 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='unit_box_0_0_clone'>
+        <pose frame=''>3.63656 2.81065 1.66658 0.000226 9e-06 -1.60347</pose>
+        <scale>1 0.85252 1</scale>
+        <link name='link'>
+          <pose frame=''>3.63656 2.81065 1.66658 0.000226 9e-06 -1.60347</pose>
+          <velocity>-0.0098 -7.5e-05 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='unit_box_0_0_clone_0'>
+        <pose frame=''>13.8624 1.26709 1.66667 -0.000226 9e-06 0.034068</pose>
+        <scale>1 10.2892 1</scale>
+        <link name='link'>
+          <pose frame=''>13.8624 1.26709 1.66667 -0.000226 9e-06 0.034068</pose>
+          <velocity>6.1e-05 0.0098 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='unit_box_0_0_clone_0_clone'>
+        <pose frame=''>18.9776 14.0221 1.66667 -0.000226 9e-06 0.034061</pose>
+        <scale>1 3.82434 1</scale>
+        <link name='link'>
+          <pose frame=''>18.9776 14.0221 1.66667 -0.000226 9e-06 0.034061</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='unit_box_0_0_clone_0_clone_0'>
+        <pose frame=''>7.35282 0.223514 1.66667 -0.000226 9e-06 0.034061</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>7.35282 0.223514 1.66667 -0.000226 9e-06 0.034061</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -113,332 +153,272 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='unit_box_0_0_clone_0_clone_clone_0_clone_clone'>
-        <pose frame=''>3.56833 0.275438 1.66667 -0.000226 6e-06 0.022264</pose>
-        <scale>1 0.252125 1</scale>
+      <model name='unit_box_0_0_clone_0_clone_clone_0'>
+        <pose frame=''>26.5741 3.7947 1.66667 8e-06 0.000226 1.60099</pose>
+        <scale>1 0.312447 1</scale>
         <link name='link'>
-          <pose frame=''>3.56833 0.275438 1.66667 -0.000226 6e-06 0.022264</pose>
+          <pose frame=''>26.5741 3.7947 1.66667 8e-06 0.000226 1.60099</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='unit_box_0_0_clone_0_clone_clone_0_clone_clone_clone_clone'>
-        <pose frame=''>1.05764 -2.86138 1.66667 -2e-06 0.000226 1.55672</pose>
-        <scale>1 1.27937 1</scale>
+      <model name='unit_box_0_0_clone_0_clone_clone_0_clone'>
+        <pose frame=''>29.8508 -0.508676 1.66667 -0.000226 9e-06 0.034061</pose>
+        <scale>1 0.857279 1</scale>
         <link name='link'>
-          <pose frame=''>1.05764 -2.86138 1.66667 -2e-06 0.000226 1.55672</pose>
+          <pose frame=''>29.8508 -0.508676 1.66667 -0.000226 9e-06 0.034061</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='unit_box_0_0_clone_0_clone_clone_0_clone_clone_clone_clone_clone'>
-        <pose frame=''>1.02378 3.62855 1.66667 -2e-06 0.000226 1.55672</pose>
+      <model name='unit_box_0_0_clone_0_clone_clone_0_clone_0'>
+        <pose frame=''>26.6881 -5.02762 1.66667 8e-06 0.000226 1.60099</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>1.02378 3.62855 1.66667 -2e-06 0.000226 1.55672</pose>
+          <pose frame=''>26.6881 -5.02762 1.66667 8e-06 0.000226 1.60099</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='unit_box_0_0_clone_0_clone_clone_clone'>
-        <pose frame=''>19.0842 12.813 1.66667 -0.000226 9e-06 0.034061</pose>
+      <model name='unit_box_0_0_clone_clone'>
+        <pose frame=''>4.05987 -2.32559 1.66712 6.7e-05 -3e-06 -1.55426</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>19.0842 12.813 1.66667 -0.000226 9e-06 0.034061</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='unit_box_0_0_clone_0_clone_clone_clone_0'>
-        <pose frame=''>13.1506 -1.84884 1.66667 -0.000226 9e-06 0.034061</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>13.1506 -1.84884 1.66667 -0.000226 9e-06 0.034061</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
+          <pose frame=''>4.05987 -2.32559 1.66712 6.7e-05 -3e-06 -1.55426</pose>
+          <velocity>-0.0098 0.000311 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='unit_cylinder_0'>
-        <pose frame=''>36.5123 8.86063 -7.43476 0 -0 0</pose>
+        <pose frame=''>36.5123 8.86063 -0.524059 0 -0 0</pose>
         <scale>1 1 6.03341</scale>
         <link name='link'>
-          <pose frame=''>36.5123 8.86063 -7.43476 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
+          <pose frame=''>36.5123 8.86063 -0.524059 0 -0 0</pose>
+          <velocity>0 0 -0.0098 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='unit_cylinder_0_clone_14_clone'>
-        <pose frame=''>34.8945 8.63353 2.40172 0 -0 0.001073</pose>
+      <model name='unit_cylinder_0_clone'>
+        <pose frame=''>35.7138 1.81409 1.99265 0 -0 0.001048</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>34.8945 8.63353 2.40172 0 -0 0.001073</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
+          <pose frame=''>35.7138 1.81409 1.99265 0 -0 0.001048</pose>
+          <velocity>0 0 -0.0098 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='unit_cylinder_0_clone_14_clone_0'>
-        <pose frame=''>39.7254 1.47591 2.40172 0 -0 0.001073</pose>
+      <model name='unit_cylinder_0_clone_0'>
+        <pose frame=''>34.333 -5.78751 1.99265 0 -0 0.00102</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>39.7254 1.47591 2.40172 0 -0 0.001073</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
+          <pose frame=''>34.333 -5.78751 1.99265 0 -0 0.00102</pose>
+          <velocity>0 0 -0.0098 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='unit_cylinder_0_clone_14_clone_1'>
-        <pose frame=''>34.6294 -3.2579 2.40172 0 -0 0.001073</pose>
+      <model name='unit_cylinder_0_clone_1'>
+        <pose frame=''>36.4256 5.60163 1.99265 0 -0 0.001071</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>34.6294 -3.2579 2.40172 0 -0 0.001073</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
+          <pose frame=''>36.4256 5.60163 1.99265 0 -0 0.001071</pose>
+          <velocity>0 0 -0.0098 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='unit_cylinder_0_clone_14_clone_10'>
-        <pose frame=''>27.6346 10.4863 2.40172 0 -0 0.001073</pose>
+      <model name='unit_cylinder_0_clone_10'>
+        <pose frame=''>48.21 5.73589 1.99265 0 -0 0.000963</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>27.6346 10.4863 2.40172 0 -0 0.001073</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
+          <pose frame=''>48.21 5.73589 1.99265 0 -0 0.000963</pose>
+          <velocity>0 0 -0.0098 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='unit_cylinder_0_clone_14_clone_11'>
-        <pose frame=''>39.7289 -3.95269 2.40172 0 -0 0.001073</pose>
+      <model name='unit_cylinder_0_clone_11'>
+        <pose frame=''>37.8194 -10.6225 1.99265 0 -0 0.000949</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>39.7289 -3.95269 2.40172 0 -0 0.001073</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
+          <pose frame=''>37.8194 -10.6225 1.99265 0 -0 0.000949</pose>
+          <velocity>0 0 -0.0098 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='unit_cylinder_0_clone_14_clone_12'>
-        <pose frame=''>34.1973 -12.8246 2.40172 0 -0 0.001073</pose>
+      <model name='unit_cylinder_0_clone_12'>
+        <pose frame=''>32.6996 12.3147 1.99265 0 -0 0.000949</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>34.1973 -12.8246 2.40172 0 -0 0.001073</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
+          <pose frame=''>32.6996 12.3147 1.99265 0 -0 0.000949</pose>
+          <velocity>0 0 -0.0098 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='unit_cylinder_0_clone_14_clone_13'>
-        <pose frame=''>29.184 -12.1897 2.40172 0 -0 0.001073</pose>
+      <model name='unit_cylinder_0_clone_13'>
+        <pose frame=''>30.5886 10.1395 1.99265 0 -0 0.000936</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>29.184 -12.1897 2.40172 0 -0 0.001073</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
+          <pose frame=''>30.5886 10.1395 1.99265 0 -0 0.000936</pose>
+          <velocity>0 0 -0.0098 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='unit_cylinder_0_clone_14_clone_14'>
-        <pose frame=''>26.2784 -11.4682 2.40172 0 -0 0.001073</pose>
+      <model name='unit_cylinder_0_clone_14'>
+        <pose frame=''>30.4731 -9.99792 1.99266 0 -0 0.001073</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>26.2784 -11.4682 2.40172 0 -0 0.001073</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
+          <pose frame=''>30.4731 -9.99792 1.99266 0 -0 0.001073</pose>
+          <velocity>0 0 -0.0098 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='unit_cylinder_0_clone_14_clone_16'>
-        <pose frame=''>32.4082 -0.136858 2.40172 0 -0 0.001073</pose>
+      <model name='unit_cylinder_0_clone_15'>
+        <pose frame=''>46.7351 -9.39948 1.99266 0 -0 0.001025</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>32.4082 -0.136858 2.40172 0 -0 0.001073</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
+          <pose frame=''>46.7351 -9.39948 1.99266 0 -0 0.001025</pose>
+          <velocity>0 0 -0.0098 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='unit_cylinder_0_clone_14_clone_17'>
-        <pose frame=''>41.0492 -11.1268 2.40172 0 -0 0.001073</pose>
+      <model name='unit_cylinder_0_clone_16'>
+        <pose frame=''>37.8551 15.9705 1.99265 0 -0 0.000998</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>41.0492 -11.1268 2.40172 0 -0 0.001073</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
+          <pose frame=''>37.8551 15.9705 1.99265 0 -0 0.000998</pose>
+          <velocity>0 0 -0.0098 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='unit_cylinder_0_clone_14_clone_2'>
-        <pose frame=''>35.1198 4.01966 2.40172 0 -0 0.001073</pose>
+      <model name='unit_cylinder_0_clone_17'>
+        <pose frame=''>41.0774 15.5736 1.99265 0 -0 0.001062</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>35.1198 4.01966 2.40172 0 -0 0.001073</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
+          <pose frame=''>41.0774 15.5736 1.99265 0 -0 0.001062</pose>
+          <velocity>0 0 -0.0098 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='unit_cylinder_0_clone_14_clone_3'>
-        <pose frame=''>40.9597 7.945 2.40172 0 -0 0.001073</pose>
+      <model name='unit_cylinder_0_clone_18'>
+        <pose frame=''>34.0571 -14.8992 1.99266 0 -0 0.001025</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>40.9597 7.945 2.40172 0 -0 0.001073</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
+          <pose frame=''>34.0571 -14.8992 1.99266 0 -0 0.001025</pose>
+          <velocity>0 0 -0.0098 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='unit_cylinder_0_clone_14_clone_5'>
-        <pose frame=''>42.0529 -6.41265 2.40172 0 -0 0.001073</pose>
+      <model name='unit_cylinder_0_clone_19'>
+        <pose frame=''>41.1999 -13.9942 1.99265 0 -0 0.00106</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>42.0529 -6.41265 2.40172 0 -0 0.001073</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
+          <pose frame=''>41.1999 -13.9942 1.99265 0 -0 0.00106</pose>
+          <velocity>0 0 -0.0098 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='unit_cylinder_0_clone_14_clone_6'>
-        <pose frame=''>36.6057 -8.82465 2.40172 0 -0 0.001073</pose>
+      <model name='unit_cylinder_0_clone_2'>
+        <pose frame=''>40.095 4.60307 1.99265 0 -0 0.00102</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>36.6057 -8.82465 2.40172 0 -0 0.001073</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
+          <pose frame=''>40.095 4.60307 1.99265 0 -0 0.00102</pose>
+          <velocity>0 0 -0.0098 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='unit_cylinder_0_clone_14_clone_8'>
-        <pose frame=''>46.1829 7.9359 2.40172 0 -0 0.001073</pose>
+      <model name='unit_cylinder_0_clone_20'>
+        <pose frame=''>40.2463 12.4856 1.99265 0 -0 0.000949</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>46.1829 7.9359 2.40172 0 -0 0.001073</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
+          <pose frame=''>40.2463 12.4856 1.99265 0 -0 0.000949</pose>
+          <velocity>0 0 -0.0098 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='unit_cylinder_0_clone_14_clone_9'>
-        <pose frame=''>30.626 9.6448 2.40172 0 -0 0.001073</pose>
+      <model name='unit_cylinder_0_clone_3'>
+        <pose frame=''>43.012 -4.07604 1.99265 0 -0 0.001061</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>30.626 9.6448 2.40172 0 -0 0.001073</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
+          <pose frame=''>43.012 -4.07604 1.99265 0 -0 0.001061</pose>
+          <velocity>0 0 -0.0098 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='unit_cylinder_0_clone_14_clone_9_clone'>
-        <pose frame=''>27.6139 3.55096 2.40172 0 -0 0.001073</pose>
+      <model name='unit_cylinder_0_clone_4'>
+        <pose frame=''>44.8772 -0.138691 1.99266 0 -0 0.001001</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>27.6139 3.55096 2.40172 0 -0 0.001073</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
+          <pose frame=''>44.8772 -0.138691 1.99266 0 -0 0.001001</pose>
+          <velocity>0 0 -0.0098 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='unit_cylinder_0_clone_14_clone_9_clone_0'>
-        <pose frame=''>28.4771 -4.34225 2.40172 0 -0 0.001073</pose>
+      <model name='unit_cylinder_0_clone_5'>
+        <pose frame=''>41.4105 1.88991 1.99265 0 -0 0.000951</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>28.4771 -4.34225 2.40172 0 -0 0.001073</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
+          <pose frame=''>41.4105 1.88991 1.99265 0 -0 0.000951</pose>
+          <velocity>0 0 -0.0098 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='unit_cylinder_0_clone_14_clone_9_clone_1'>
-        <pose frame=''>24.5651 -4.32645 2.40172 0 -0 0.001073</pose>
+      <model name='unit_cylinder_0_clone_6'>
+        <pose frame=''>41.6643 -6.5691 1.99265 0 -0 0.00102</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>24.5651 -4.32645 2.40172 0 -0 0.001073</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
+          <pose frame=''>41.6643 -6.5691 1.99265 0 -0 0.00102</pose>
+          <velocity>0 0 -0.0098 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='unit_cylinder_0_clone_14_clone_9_clone_2'>
-        <pose frame=''>24.4719 4.62219 2.40172 0 -0 0.001073</pose>
+      <model name='unit_cylinder_0_clone_7'>
+        <pose frame=''>37.572 -1.32122 1.99265 0 -0 0.001017</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>24.4719 4.62219 2.40172 0 -0 0.001073</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
+          <pose frame=''>37.572 -1.32122 1.99265 0 -0 0.001017</pose>
+          <velocity>0 0 -0.0098 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='unit_cylinder_0_clone_14_clone_9_clone_3'>
-        <pose frame=''>26.5113 0.096108 2.40172 0 -0 0.001073</pose>
+      <model name='unit_cylinder_0_clone_8'>
+        <pose frame=''>45.5641 11.3365 1.99265 0 -0 0.001111</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>26.5113 0.096108 2.40172 0 -0 0.001073</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
+          <pose frame=''>45.5641 11.3365 1.99265 0 -0 0.001111</pose>
+          <velocity>0 0 -0.0098 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='unit_cylinder_0_clone_14_clone_9_clone_4'>
-        <pose frame=''>31.106 4.49997 2.40172 0 -0 0.001073</pose>
+      <model name='unit_cylinder_0_clone_9'>
+        <pose frame=''>43.3588 9.77114 1.99266 0 -0 0.001025</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>31.106 4.49997 2.40172 0 -0 0.001073</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='unit_cylinder_0_clone_14_clone_9_clone_5'>
-        <pose frame=''>23.8422 1.77062 2.40172 0 -0 0.001073</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>23.8422 1.77062 2.40172 0 -0 0.001073</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='unit_cylinder_0_clone_14_clone_9_clone_6'>
-        <pose frame=''>22.8365 -1.77482 2.40172 0 -0 0.001073</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>22.8365 -1.77482 2.40172 0 -0 0.001073</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='unit_cylinder_0_clone_14_clone_9_clone_7'>
-        <pose frame=''>32.2752 -5.48949 2.40172 0 -0 0.001073</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>32.2752 -5.48949 2.40172 0 -0 0.001073</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='unit_cylinder_0_clone_14_clone_9_clone_8'>
-        <pose frame=''>36.2537 0.598528 2.40172 0 -0 0.001073</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>36.2537 0.598528 2.40172 0 -0 0.001073</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='unit_cylinder_0_clone_14_clone_9_clone_9'>
-        <pose frame=''>38.6147 6.08509 2.40172 0 -0 0.001073</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>38.6147 6.08509 2.40172 0 -0 0.001073</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
+          <pose frame=''>43.3588 9.77114 1.99266 0 -0 0.001025</pose>
+          <velocity>0 0 -0.0098 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
@@ -449,7 +429,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose frame=''>-26.8328 -25.4503 47.6033 0 0.329796 0.524102</pose>
+        <pose frame=''>6.82972 -14.5525 26.8147 -0 0.657796 0.50014</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
@@ -457,6 +437,112 @@
     <gravity>0 0 0</gravity>
     <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
     <atmosphere type='adiabatic'/>
+    <model name='unit_box_0_0_clone'>
+      <pose frame=''>3.52189 -1.51761 0.5 0 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.237691 6.28546 3.33454</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <collide_without_contact>1</collide_without_contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.237691 6.28546 3.33454</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>0</gravity>
+      </link>
+    </model>
+    <model name='unit_box_0_0_clone_clone'>
+      <pose frame=''>5.1546 -2.36094 0.5 0 0 -1.56726</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.237691 4.56821 3.33454</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <collide_without_contact>1</collide_without_contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.237691 4.56821 3.33454</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>0</gravity>
+      </link>
+    </model>
     <model name='SQ01s'>
       <link name='base_link'>
         <pose frame=''>0 0 0 0 -0 0</pose>
@@ -637,11 +723,62 @@
         </sensor>
         <kinematic>0</kinematic>
       </link>
-      <static>1</static>
       <pose frame=''>0 0 0 0 -0 0</pose>
     </model>
+    <model name='unit_box_0_0_clone_0'>
+      <pose frame=''>15.8 0.490651 1.66667 -0.000226 8e-06 0.019874</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.237691 1.30553 3.33454</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <collide_without_contact>1</collide_without_contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.237691 1.30553 3.33454</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>0</gravity>
+      </link>
+    </model>
     <model name='unit_cylinder_0'>
-      <static>1</static>
       <pose frame=''>36.5123 8.86063 0.5 0 -0 0</pose>
       <link name='link'>
         <inertial>
@@ -659,7 +796,7 @@
           <geometry>
             <cylinder>
               <radius>0.5</radius>
-              <length>0.00455315</length>
+              <length>0.165744</length>
             </cylinder>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -681,7 +818,7 @@
           <geometry>
             <cylinder>
               <radius>0.5</radius>
-              <length>0.00455315</length>
+              <length>0.165744</length>
             </cylinder>
           </geometry>
           <material>
@@ -696,8 +833,1270 @@
         <gravity>0</gravity>
       </link>
     </model>
+    <model name='unit_cylinder_0_clone'>
+      <pose frame=''>35.7139 1.81409 0.5 0 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.145833</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.145833</iyy>
+            <iyz>0</iyz>
+            <izz>0.125</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>6.03342</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <collide_without_contact>1</collide_without_contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>6.03342</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>0</gravity>
+      </link>
+    </model>
+    <model name='unit_cylinder_0_clone_0'>
+      <pose frame=''>34.3331 -5.78751 0.5 0 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.145833</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.145833</iyy>
+            <iyz>0</iyz>
+            <izz>0.125</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>6.03342</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <collide_without_contact>1</collide_without_contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>6.03342</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>0</gravity>
+      </link>
+    </model>
+    <model name='unit_cylinder_0_clone_1'>
+      <pose frame=''>31.4202 4.72771 0.5 0 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.145833</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.145833</iyy>
+            <iyz>0</iyz>
+            <izz>0.125</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>6.03342</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <collide_without_contact>1</collide_without_contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>6.03342</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>0</gravity>
+      </link>
+    </model>
+    <model name='unit_cylinder_0_clone_2'>
+      <pose frame=''>40.0951 4.60307 0.5 0 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.145833</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.145833</iyy>
+            <iyz>0</iyz>
+            <izz>0.125</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>6.03342</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <collide_without_contact>1</collide_without_contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>6.03342</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>0</gravity>
+      </link>
+    </model>
+    <model name='unit_cylinder_0_clone_3'>
+      <pose frame=''>43.0121 -4.07604 0.5 0 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.145833</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.145833</iyy>
+            <iyz>0</iyz>
+            <izz>0.125</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>6.03342</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <collide_without_contact>1</collide_without_contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>6.03342</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>0</gravity>
+      </link>
+    </model>
+    <model name='unit_cylinder_0_clone_4'>
+      <pose frame=''>44.8773 -0.138697 0.5 0 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.145833</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.145833</iyy>
+            <iyz>0</iyz>
+            <izz>0.125</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>6.03342</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <collide_without_contact>1</collide_without_contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>6.03342</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>0</gravity>
+      </link>
+    </model>
+    <model name='unit_cylinder_0_clone_5'>
+      <pose frame=''>30.7255 -1.25762 0.5 0 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.145833</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.145833</iyy>
+            <iyz>0</iyz>
+            <izz>0.125</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>6.03342</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <collide_without_contact>1</collide_without_contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>6.03342</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>0</gravity>
+      </link>
+    </model>
+    <model name='unit_cylinder_0_clone_6'>
+      <pose frame=''>41.6644 -6.5691 0.5 0 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.145833</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.145833</iyy>
+            <iyz>0</iyz>
+            <izz>0.125</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>6.03342</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <collide_without_contact>1</collide_without_contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>6.03342</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>0</gravity>
+      </link>
+    </model>
+    <model name='unit_cylinder_0_clone_7'>
+      <pose frame=''>37.5721 -1.32123 0.5 0 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.145833</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.145833</iyy>
+            <iyz>0</iyz>
+            <izz>0.125</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>6.03342</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <collide_without_contact>1</collide_without_contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>6.03342</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>0</gravity>
+      </link>
+    </model>
+    <model name='unit_cylinder_0_clone_8'>
+      <pose frame=''>45.5642 11.3365 0.5 0 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.145833</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.145833</iyy>
+            <iyz>0</iyz>
+            <izz>0.125</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>6.03342</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <collide_without_contact>1</collide_without_contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>6.03342</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>0</gravity>
+      </link>
+    </model>
+    <model name='unit_cylinder_0_clone_9'>
+      <pose frame=''>43.3589 9.77113 0.5 0 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.145833</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.145833</iyy>
+            <iyz>0</iyz>
+            <izz>0.125</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>6.03342</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <collide_without_contact>1</collide_without_contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>6.03342</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>0</gravity>
+      </link>
+    </model>
+    <model name='unit_cylinder_0_clone_10'>
+      <pose frame=''>48.2101 5.73588 0.5 0 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.145833</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.145833</iyy>
+            <iyz>0</iyz>
+            <izz>0.125</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>6.03342</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <collide_without_contact>1</collide_without_contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>6.03342</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>0</gravity>
+      </link>
+    </model>
+    <model name='unit_cylinder_0_clone_11'>
+      <pose frame=''>37.8195 -10.6225 0.5 0 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.145833</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.145833</iyy>
+            <iyz>0</iyz>
+            <izz>0.125</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>6.03342</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <collide_without_contact>1</collide_without_contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>6.03342</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>0</gravity>
+      </link>
+    </model>
+    <model name='unit_cylinder_0_clone_12'>
+      <pose frame=''>32.6997 12.3147 0.5 0 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.145833</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.145833</iyy>
+            <iyz>0</iyz>
+            <izz>0.125</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>6.03342</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <collide_without_contact>1</collide_without_contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>6.03342</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>0</gravity>
+      </link>
+    </model>
+    <model name='unit_cylinder_0_clone_13'>
+      <pose frame=''>30.5887 10.1395 0.5 0 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.145833</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.145833</iyy>
+            <iyz>0</iyz>
+            <izz>0.125</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>6.03342</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <collide_without_contact>1</collide_without_contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>6.03342</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>0</gravity>
+      </link>
+    </model>
+    <model name='unit_cylinder_0_clone_14'>
+      <pose frame=''>30.4732 -9.99792 0.5 0 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.145833</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.145833</iyy>
+            <iyz>0</iyz>
+            <izz>0.125</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>6.03342</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <collide_without_contact>1</collide_without_contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>6.03342</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>0</gravity>
+      </link>
+    </model>
+    <model name='unit_cylinder_0_clone_15'>
+      <pose frame=''>46.7352 -9.39949 0.5 0 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.145833</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.145833</iyy>
+            <iyz>0</iyz>
+            <izz>0.125</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>6.03342</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <collide_without_contact>1</collide_without_contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>6.03342</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>0</gravity>
+      </link>
+    </model>
+    <model name='unit_cylinder_0_clone_16'>
+      <pose frame=''>37.8552 15.9705 0.5 0 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.145833</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.145833</iyy>
+            <iyz>0</iyz>
+            <izz>0.125</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>6.03342</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <collide_without_contact>1</collide_without_contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>6.03342</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>0</gravity>
+      </link>
+    </model>
+    <model name='unit_cylinder_0_clone_17'>
+      <pose frame=''>41.0775 15.5736 0.5 0 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.145833</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.145833</iyy>
+            <iyz>0</iyz>
+            <izz>0.125</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>6.03342</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <collide_without_contact>1</collide_without_contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>6.03342</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>0</gravity>
+      </link>
+    </model>
+    <model name='unit_cylinder_0_clone_18'>
+      <pose frame=''>34.0572 -14.8992 0.5 0 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.145833</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.145833</iyy>
+            <iyz>0</iyz>
+            <izz>0.125</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>6.03342</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <collide_without_contact>1</collide_without_contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>6.03342</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>0</gravity>
+      </link>
+    </model>
+    <model name='unit_cylinder_0_clone_19'>
+      <pose frame=''>41.2 -13.9942 0.5 0 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.145833</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.145833</iyy>
+            <iyz>0</iyz>
+            <izz>0.125</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>6.03342</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <collide_without_contact>1</collide_without_contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>6.03342</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>0</gravity>
+      </link>
+    </model>
+    <model name='unit_cylinder_0_clone_20'>
+      <pose frame=''>40.2464 12.4856 0.5 0 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.145833</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.145833</iyy>
+            <iyz>0</iyz>
+            <izz>0.125</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>6.03342</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <collide_without_contact>1</collide_without_contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>6.03342</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>0</gravity>
+      </link>
+    </model>
+    <model name='unit_box_0_0_clone_0_clone'>
+      <pose frame=''>18.4562 13.574 1.66667 -0.000226 9e-06 0.034061</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.237691 5.35849 3.33454</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <collide_without_contact>1</collide_without_contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.237691 5.35849 3.33454</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>0</gravity>
+      </link>
+    </model>
     <model name='unit_box_0_0_clone_0_clone_clone'>
-      <static>1</static>
       <pose frame=''>20.034 -13.669 1.66667 -0.000226 9e-06 0.034061</pose>
       <link name='link'>
         <inertial>
@@ -750,9 +2149,8 @@
         <gravity>0</gravity>
       </link>
     </model>
-    <model name='unit_box_0_0_clone_0_clone_clone_0_clone_clone'>
-      <static>1</static>
-      <pose frame=''>3.56833 0.275438 1.66667 -0.000226 9e-06 0.034061</pose>
+    <model name='unit_box_0_0_clone_0_clone_0'>
+      <pose frame=''>7.35282 0.223514 1.66667 -0.000226 9e-06 0.034061</pose>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -768,7 +2166,7 @@
         <collision name='collision'>
           <geometry>
             <box>
-              <size>0.237691 25.939 3.33454</size>
+              <size>0.237691 5.35848 3.33454</size>
             </box>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -789,7 +2187,7 @@
         <visual name='visual'>
           <geometry>
             <box>
-              <size>0.237691 25.939 3.33454</size>
+              <size>0.237691 5.35848 3.33454</size>
             </box>
           </geometry>
           <material>
@@ -804,905 +2202,8 @@
         <gravity>0</gravity>
       </link>
     </model>
-    <model name='unit_cylinder_0_clone_14_clone'>
-      <static>1</static>
-      <pose frame=''>34.8945 8.63353 2.40172 0 -0 0.001073</pose>
-      <link name='link'>
-        <inertial>
-          <mass>1</mass>
-          <inertia>
-            <ixx>0.145833</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.145833</iyy>
-            <iyz>0</iyz>
-            <izz>0.125</izz>
-          </inertia>
-        </inertial>
-        <collision name='collision'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <collide_without_contact>1</collide_without_contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Grey</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>0</gravity>
-      </link>
-    </model>
-    <model name='unit_cylinder_0_clone_14_clone_0'>
-      <static>1</static>
-      <pose frame=''>39.7254 1.47591 2.40172 0 -0 0.001073</pose>
-      <link name='link'>
-        <inertial>
-          <mass>1</mass>
-          <inertia>
-            <ixx>0.145833</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.145833</iyy>
-            <iyz>0</iyz>
-            <izz>0.125</izz>
-          </inertia>
-        </inertial>
-        <collision name='collision'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <collide_without_contact>1</collide_without_contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Grey</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>0</gravity>
-      </link>
-    </model>
-    <model name='unit_cylinder_0_clone_14_clone_1'>
-      <static>1</static>
-      <pose frame=''>34.6294 -3.2579 2.40172 0 -0 0.001073</pose>
-      <link name='link'>
-        <inertial>
-          <mass>1</mass>
-          <inertia>
-            <ixx>0.145833</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.145833</iyy>
-            <iyz>0</iyz>
-            <izz>0.125</izz>
-          </inertia>
-        </inertial>
-        <collision name='collision'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <collide_without_contact>1</collide_without_contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Grey</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>0</gravity>
-      </link>
-    </model>
-    <model name='unit_cylinder_0_clone_14_clone_2'>
-      <static>1</static>
-      <pose frame=''>35.1198 4.01966 2.40172 0 -0 0.001073</pose>
-      <link name='link'>
-        <inertial>
-          <mass>1</mass>
-          <inertia>
-            <ixx>0.145833</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.145833</iyy>
-            <iyz>0</iyz>
-            <izz>0.125</izz>
-          </inertia>
-        </inertial>
-        <collision name='collision'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <collide_without_contact>1</collide_without_contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Grey</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>0</gravity>
-      </link>
-    </model>
-    <model name='unit_cylinder_0_clone_14_clone_3'>
-      <static>1</static>
-      <pose frame=''>40.9597 7.945 2.40172 0 -0 0.001073</pose>
-      <link name='link'>
-        <inertial>
-          <mass>1</mass>
-          <inertia>
-            <ixx>0.145833</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.145833</iyy>
-            <iyz>0</iyz>
-            <izz>0.125</izz>
-          </inertia>
-        </inertial>
-        <collision name='collision'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <collide_without_contact>1</collide_without_contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Grey</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>0</gravity>
-      </link>
-    </model>
-    <model name='unit_cylinder_0_clone_14_clone_5'>
-      <static>1</static>
-      <pose frame=''>42.0529 -6.41265 2.40172 0 -0 0.001073</pose>
-      <link name='link'>
-        <inertial>
-          <mass>1</mass>
-          <inertia>
-            <ixx>0.145833</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.145833</iyy>
-            <iyz>0</iyz>
-            <izz>0.125</izz>
-          </inertia>
-        </inertial>
-        <collision name='collision'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <collide_without_contact>1</collide_without_contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Grey</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>0</gravity>
-      </link>
-    </model>
-    <model name='unit_cylinder_0_clone_14_clone_6'>
-      <static>1</static>
-      <pose frame=''>36.6057 -8.82465 2.40172 0 -0 0.001073</pose>
-      <link name='link'>
-        <inertial>
-          <mass>1</mass>
-          <inertia>
-            <ixx>0.145833</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.145833</iyy>
-            <iyz>0</iyz>
-            <izz>0.125</izz>
-          </inertia>
-        </inertial>
-        <collision name='collision'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <collide_without_contact>1</collide_without_contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Grey</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>0</gravity>
-      </link>
-    </model>
-    <model name='unit_cylinder_0_clone_14_clone_8'>
-      <static>1</static>
-      <pose frame=''>46.1829 7.9359 2.40172 0 -0 0.001073</pose>
-      <link name='link'>
-        <inertial>
-          <mass>1</mass>
-          <inertia>
-            <ixx>0.145833</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.145833</iyy>
-            <iyz>0</iyz>
-            <izz>0.125</izz>
-          </inertia>
-        </inertial>
-        <collision name='collision'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <collide_without_contact>1</collide_without_contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Grey</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>0</gravity>
-      </link>
-    </model>
-    <model name='unit_cylinder_0_clone_14_clone_9'>
-      <static>1</static>
-      <pose frame=''>30.626 9.6448 2.40172 0 -0 0.001073</pose>
-      <link name='link'>
-        <inertial>
-          <mass>1</mass>
-          <inertia>
-            <ixx>0.145833</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.145833</iyy>
-            <iyz>0</iyz>
-            <izz>0.125</izz>
-          </inertia>
-        </inertial>
-        <collision name='collision'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <collide_without_contact>1</collide_without_contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Grey</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>0</gravity>
-      </link>
-    </model>
-    <model name='unit_cylinder_0_clone_14_clone_10'>
-      <static>1</static>
-      <pose frame=''>27.6346 10.4863 2.40172 0 -0 0.001073</pose>
-      <link name='link'>
-        <inertial>
-          <mass>1</mass>
-          <inertia>
-            <ixx>0.145833</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.145833</iyy>
-            <iyz>0</iyz>
-            <izz>0.125</izz>
-          </inertia>
-        </inertial>
-        <collision name='collision'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <collide_without_contact>1</collide_without_contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Grey</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>0</gravity>
-      </link>
-    </model>
-    <model name='unit_cylinder_0_clone_14_clone_11'>
-      <static>1</static>
-      <pose frame=''>39.7289 -3.95269 2.40172 0 -0 0.001073</pose>
-      <link name='link'>
-        <inertial>
-          <mass>1</mass>
-          <inertia>
-            <ixx>0.145833</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.145833</iyy>
-            <iyz>0</iyz>
-            <izz>0.125</izz>
-          </inertia>
-        </inertial>
-        <collision name='collision'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <collide_without_contact>1</collide_without_contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Grey</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>0</gravity>
-      </link>
-    </model>
-    <model name='unit_cylinder_0_clone_14_clone_12'>
-      <static>1</static>
-      <pose frame=''>34.1973 -12.8246 2.40172 0 -0 0.001073</pose>
-      <link name='link'>
-        <inertial>
-          <mass>1</mass>
-          <inertia>
-            <ixx>0.145833</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.145833</iyy>
-            <iyz>0</iyz>
-            <izz>0.125</izz>
-          </inertia>
-        </inertial>
-        <collision name='collision'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <collide_without_contact>1</collide_without_contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Grey</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>0</gravity>
-      </link>
-    </model>
-    <model name='unit_cylinder_0_clone_14_clone_13'>
-      <static>1</static>
-      <pose frame=''>29.184 -12.1897 2.40172 0 -0 0.001073</pose>
-      <link name='link'>
-        <inertial>
-          <mass>1</mass>
-          <inertia>
-            <ixx>0.145833</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.145833</iyy>
-            <iyz>0</iyz>
-            <izz>0.125</izz>
-          </inertia>
-        </inertial>
-        <collision name='collision'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <collide_without_contact>1</collide_without_contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Grey</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>0</gravity>
-      </link>
-    </model>
-    <model name='unit_cylinder_0_clone_14_clone_14'>
-      <static>1</static>
-      <pose frame=''>26.2784 -11.4682 2.40172 0 -0 0.001073</pose>
-      <link name='link'>
-        <inertial>
-          <mass>1</mass>
-          <inertia>
-            <ixx>0.145833</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.145833</iyy>
-            <iyz>0</iyz>
-            <izz>0.125</izz>
-          </inertia>
-        </inertial>
-        <collision name='collision'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <collide_without_contact>1</collide_without_contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Grey</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>0</gravity>
-      </link>
-    </model>
-    <model name='unit_cylinder_0_clone_14_clone_16'>
-      <static>1</static>
-      <pose frame=''>32.4082 -0.136858 2.40172 0 -0 0.001073</pose>
-      <link name='link'>
-        <inertial>
-          <mass>1</mass>
-          <inertia>
-            <ixx>0.145833</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.145833</iyy>
-            <iyz>0</iyz>
-            <izz>0.125</izz>
-          </inertia>
-        </inertial>
-        <collision name='collision'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <collide_without_contact>1</collide_without_contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Grey</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>0</gravity>
-      </link>
-    </model>
-    <model name='unit_cylinder_0_clone_14_clone_17'>
-      <static>1</static>
-      <pose frame=''>41.0492 -11.1268 2.40172 0 -0 0.001073</pose>
-      <link name='link'>
-        <inertial>
-          <mass>1</mass>
-          <inertia>
-            <ixx>0.145833</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.145833</iyy>
-            <iyz>0</iyz>
-            <izz>0.125</izz>
-          </inertia>
-        </inertial>
-        <collision name='collision'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <collide_without_contact>1</collide_without_contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Grey</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>0</gravity>
-      </link>
-    </model>
-    <model name='unit_box_0_0_clone_0_clone_clone_clone'>
-      <static>1</static>
-      <pose frame=''>19.0842 12.813 1.66667 -0.000226 9e-06 0.034061</pose>
+    <model name='unit_box_0_0_clone_0_clone_clone_0'>
+      <pose frame=''>27.9972 0.183749 1.66667 -0.000226 9e-06 0.034061</pose>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -1718,7 +2219,7 @@
         <collision name='collision'>
           <geometry>
             <box>
-              <size>0.237691 20.4927 3.33454</size>
+              <size>0.237691 20.4928 3.33454</size>
             </box>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -1739,7 +2240,7 @@
         <visual name='visual'>
           <geometry>
             <box>
-              <size>0.237691 20.4927 3.33454</size>
+              <size>0.237691 20.4928 3.33454</size>
             </box>
           </geometry>
           <material>
@@ -1754,9 +2255,8 @@
         <gravity>0</gravity>
       </link>
     </model>
-    <model name='unit_box_0_0_clone_0_clone_clone_0_clone_clone_clone_clone'>
-      <static>1</static>
-      <pose frame=''>1.56834 -3.00868 1.66667 1.8e-05 0.000225 1.64588</pose>
+    <model name='unit_box_0_0_clone_0_clone_clone_0_clone'>
+      <pose frame=''>25.0634 6.02662 1.66667 -0.000226 9e-06 0.034061</pose>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -1772,7 +2272,7 @@
         <collision name='collision'>
           <geometry>
             <box>
-              <size>0.237691 4.13417 3.33454</size>
+              <size>0.237691 10.584 3.33454</size>
             </box>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -1793,7 +2293,7 @@
         <visual name='visual'>
           <geometry>
             <box>
-              <size>0.237691 4.13417 3.33454</size>
+              <size>0.237691 10.584 3.33454</size>
             </box>
           </geometry>
           <material>
@@ -1808,625 +2308,8 @@
         <gravity>0</gravity>
       </link>
     </model>
-    <model name='unit_cylinder_0_clone_14_clone_9_clone'>
-      <static>1</static>
-      <pose frame=''>27.6139 3.55096 2.40172 0 -0 0.001073</pose>
-      <link name='link'>
-        <inertial>
-          <mass>1</mass>
-          <inertia>
-            <ixx>0.145833</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.145833</iyy>
-            <iyz>0</iyz>
-            <izz>0.125</izz>
-          </inertia>
-        </inertial>
-        <collision name='collision'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <collide_without_contact>1</collide_without_contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Grey</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>0</gravity>
-      </link>
-    </model>
-    <model name='unit_cylinder_0_clone_14_clone_9_clone_0'>
-      <static>1</static>
-      <pose frame=''>28.4771 -4.34225 2.40172 0 -0 0.001073</pose>
-      <link name='link'>
-        <inertial>
-          <mass>1</mass>
-          <inertia>
-            <ixx>0.145833</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.145833</iyy>
-            <iyz>0</iyz>
-            <izz>0.125</izz>
-          </inertia>
-        </inertial>
-        <collision name='collision'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <collide_without_contact>1</collide_without_contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Grey</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>0</gravity>
-      </link>
-    </model>
-    <model name='unit_cylinder_0_clone_14_clone_9_clone_1'>
-      <static>1</static>
-      <pose frame=''>24.5651 -4.32645 2.40172 0 -0 0.001073</pose>
-      <link name='link'>
-        <inertial>
-          <mass>1</mass>
-          <inertia>
-            <ixx>0.145833</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.145833</iyy>
-            <iyz>0</iyz>
-            <izz>0.125</izz>
-          </inertia>
-        </inertial>
-        <collision name='collision'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <collide_without_contact>1</collide_without_contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Grey</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>0</gravity>
-      </link>
-    </model>
-    <model name='unit_cylinder_0_clone_14_clone_9_clone_2'>
-      <static>1</static>
-      <pose frame=''>24.4719 4.62219 2.40172 0 -0 0.001073</pose>
-      <link name='link'>
-        <inertial>
-          <mass>1</mass>
-          <inertia>
-            <ixx>0.145833</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.145833</iyy>
-            <iyz>0</iyz>
-            <izz>0.125</izz>
-          </inertia>
-        </inertial>
-        <collision name='collision'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <collide_without_contact>1</collide_without_contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Grey</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>0</gravity>
-      </link>
-    </model>
-    <model name='unit_cylinder_0_clone_14_clone_9_clone_3'>
-      <static>1</static>
-      <pose frame=''>26.5113 0.096108 2.40172 0 -0 0.001073</pose>
-      <link name='link'>
-        <inertial>
-          <mass>1</mass>
-          <inertia>
-            <ixx>0.145833</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.145833</iyy>
-            <iyz>0</iyz>
-            <izz>0.125</izz>
-          </inertia>
-        </inertial>
-        <collision name='collision'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <collide_without_contact>1</collide_without_contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Grey</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>0</gravity>
-      </link>
-    </model>
-    <model name='unit_cylinder_0_clone_14_clone_9_clone_4'>
-      <static>1</static>
-      <pose frame=''>31.106 4.49997 2.40172 0 -0 0.001073</pose>
-      <link name='link'>
-        <inertial>
-          <mass>1</mass>
-          <inertia>
-            <ixx>0.145833</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.145833</iyy>
-            <iyz>0</iyz>
-            <izz>0.125</izz>
-          </inertia>
-        </inertial>
-        <collision name='collision'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <collide_without_contact>1</collide_without_contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Grey</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>0</gravity>
-      </link>
-    </model>
-    <model name='unit_cylinder_0_clone_14_clone_9_clone_5'>
-      <static>1</static>
-      <pose frame=''>23.8422 1.77062 2.40172 0 -0 0.001073</pose>
-      <link name='link'>
-        <inertial>
-          <mass>1</mass>
-          <inertia>
-            <ixx>0.145833</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.145833</iyy>
-            <iyz>0</iyz>
-            <izz>0.125</izz>
-          </inertia>
-        </inertial>
-        <collision name='collision'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <collide_without_contact>1</collide_without_contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Grey</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>0</gravity>
-      </link>
-    </model>
-    <model name='unit_cylinder_0_clone_14_clone_9_clone_6'>
-      <static>1</static>
-      <pose frame=''>22.8365 -1.77482 2.40172 0 -0 0.001073</pose>
-      <link name='link'>
-        <inertial>
-          <mass>1</mass>
-          <inertia>
-            <ixx>0.145833</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.145833</iyy>
-            <iyz>0</iyz>
-            <izz>0.125</izz>
-          </inertia>
-        </inertial>
-        <collision name='collision'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <collide_without_contact>1</collide_without_contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Grey</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>0</gravity>
-      </link>
-    </model>
-    <model name='unit_cylinder_0_clone_14_clone_9_clone_7'>
-      <static>1</static>
-      <pose frame=''>32.2752 -5.48949 2.40172 0 -0 0.001073</pose>
-      <link name='link'>
-        <inertial>
-          <mass>1</mass>
-          <inertia>
-            <ixx>0.145833</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.145833</iyy>
-            <iyz>0</iyz>
-            <izz>0.125</izz>
-          </inertia>
-        </inertial>
-        <collision name='collision'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <collide_without_contact>1</collide_without_contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Grey</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>0</gravity>
-      </link>
-    </model>
-    <model name='unit_cylinder_0_clone_14_clone_9_clone_8'>
-      <static>1</static>
-      <pose frame=''>36.2537 0.598528 2.40172 0 -0 0.001073</pose>
-      <link name='link'>
-        <inertial>
-          <mass>1</mass>
-          <inertia>
-            <ixx>0.145833</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.145833</iyy>
-            <iyz>0</iyz>
-            <izz>0.125</izz>
-          </inertia>
-        </inertial>
-        <collision name='collision'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <collide_without_contact>1</collide_without_contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Grey</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>0</gravity>
-      </link>
-    </model>
-    <model name='unit_cylinder_0_clone_14_clone_9_clone_9'>
-      <static>1</static>
-      <pose frame=''>38.6147 6.08509 2.40172 0 -0 0.001073</pose>
-      <link name='link'>
-        <inertial>
-          <mass>1</mass>
-          <inertia>
-            <ixx>0.145833</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.145833</iyy>
-            <iyz>0</iyz>
-            <izz>0.125</izz>
-          </inertia>
-        </inertial>
-        <collision name='collision'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <collide_without_contact>1</collide_without_contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>6.03342</length>
-            </cylinder>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Grey</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>0</gravity>
-      </link>
-    </model>
-    <model name='unit_box_0_0_clone_0_clone_clone_clone_0'>
-      <static>1</static>
-      <pose frame=''>13.1506 -1.84884 1.66667 -0.000226 9e-06 0.034061</pose>
+    <model name='unit_box_0_0_clone_0_clone_clone_0_clone_0'>
+      <pose frame=''>26.6881 -5.02762 1.66667 8e-06 0.000226 1.60099</pose>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -2442,7 +2325,7 @@
         <collision name='collision'>
           <geometry>
             <box>
-              <size>0.237691 20.4927 3.33454</size>
+              <size>0.237691 6.4029 3.33454</size>
             </box>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -2463,61 +2346,7 @@
         <visual name='visual'>
           <geometry>
             <box>
-              <size>0.237691 20.4927 3.33454</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Grey</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>0</gravity>
-      </link>
-    </model>
-    <model name='unit_box_0_0_clone_0_clone_clone_0_clone_clone_clone_clone_clone'>
-      <static>1</static>
-      <pose frame=''>1.02378 3.62855 1.66667 -2e-06 0.000226 1.55672</pose>
-      <link name='link'>
-        <inertial>
-          <mass>1</mass>
-          <inertia>
-            <ixx>0.166667</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.166667</iyy>
-            <iyz>0</iyz>
-            <izz>0.166667</izz>
-          </inertia>
-        </inertial>
-        <collision name='collision'>
-          <geometry>
-            <box>
-              <size>0.237691 5.28913 3.33454</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <collide_without_contact>1</collide_without_contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <box>
-              <size>0.237691 5.28913 3.33454</size>
+              <size>0.237691 6.4029 3.33454</size>
             </box>
           </geometry>
           <material>
