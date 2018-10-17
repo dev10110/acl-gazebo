@@ -1,5 +1,6 @@
 <sdf version='1.6'>
   <world name='default'>
+  <plugin name="disable_physics" filename="libdisable_physics.so"/>
     <model name='ground_plane'>
       <static>1</static>
       <link name='link'>
@@ -99,10 +100,10 @@
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
     <state world_name='default'>
-      <sim_time>1005 691000000</sim_time>
-      <real_time>278 4675540</real_time>
-      <wall_time>1536879366 140296228</wall_time>
-      <iterations>277080</iterations>
+      <sim_time>1423 957000000</sim_time>
+      <real_time>418 927150381</real_time>
+      <wall_time>1539806570 818084048</wall_time>
+      <iterations>418266</iterations>
       <model name='ground_plane'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -114,10 +115,10 @@
         </link>
       </model>
       <model name='willowgarage'>
-        <pose frame=''>0.412392 -1.38085 0 0 -0 0</pose>
+        <pose frame=''>0.410405 -1.06644 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='walls'>
-          <pose frame=''>0.412392 -1.38085 0 0 -0 0</pose>
+          <pose frame=''>0.410405 -1.06644 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -129,7 +130,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose frame=''>-41.3524 -123.821 149.898 -0 0.641796 0.959493</pose>
+        <pose frame=''>1.05994 -33.13 85.6339 0 1.0458 1.09948</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>

@@ -1,5 +1,6 @@
 <sdf version='1.6'>
   <world name='vrc_task_1'>
+   <plugin name="disable_physics" filename="libdisable_physics.so"/>
     <model name='ground_plane'>
       <static>1</static>
       <link name='link'>
