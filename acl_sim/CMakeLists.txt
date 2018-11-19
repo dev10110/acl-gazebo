@@ -6,6 +6,10 @@ find_package(catkin)
 catkin_package()
 
 
+
+find_package( Eigen3 REQUIRED )
+include_directories(${EIGEN3_INCLUDE_DIR})
+
 find_package(catkin REQUIRED COMPONENTS 
   roscpp 
   gazebo_ros 
@@ -17,6 +21,9 @@ include_directories(${Boost_INCLUDE_DIR} ${catkin_INCLUDE_DIRS} ${GAZEBO_INCLUDE
 
 add_library(disable_physics src/disable_physics.cpp)
 target_link_libraries(disable_physics ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
+
+add_executable(create_random_forest src/create_random_forest.cpp)
+target_link_libraries(create_random_forest ${catkin_LIBRARIES} ${PCL_LIBRARIES} ${JPS3D_LIBRARIES} )
 
 catkin_package(
   DEPENDS 
