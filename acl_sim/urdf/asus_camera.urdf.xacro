@@ -106,7 +106,7 @@
           <plugin name="${name}_camera_controller" filename="libgazebo_ros_openni_kinect.so">
             <imageTopicName>${name}/rgb/image_raw</imageTopicName>
             <cameraInfoTopicName>${name}/rgb/camera_info</cameraInfoTopicName>
-            <depthImageTopicName>${name}/depth/image_raw</depthImageTopicName>
+            <depthImageTopicName>${name}/depth/image_rect_raw</depthImageTopicName>
             <depthImageCameraInfoTopicName>${name}/depth/camera_info</depthImageCameraInfoTopicName>
             <pointCloudTopicName>${name}/cloud</pointCloudTopicName>
             <frameName>${name}</frameName>
