@@ -11,7 +11,6 @@ class WorldPluginTutorial : public WorldPlugin
 public:
   WorldPluginTutorial() : WorldPlugin()
   {
-    printf("Hello World to disable physics!\n");
   }
 
 public:
@@ -19,7 +18,6 @@ public:
   gazebo::event::ConnectionPtr _update_connection;
   void Load(physics::WorldPtr ptr, sdf::ElementPtr _sdf)
   {
-    printf("Loading\n");
     _world = ptr;
     _update_connection = event::Events::ConnectWorldUpdateBegin(std::bind(&WorldPluginTutorial::OnUpdate, this));
   }
@@ -28,7 +26,7 @@ public:
   {
     if (_world->GetEnablePhysicsEngine())
     {
-      printf("DISABLING PHYSICS!!!\n");
+      printf("**DISABLING PHYSICS**\n");
       _world->EnablePhysicsEngine(false);
     }
   }
