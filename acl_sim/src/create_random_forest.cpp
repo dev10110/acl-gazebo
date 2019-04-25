@@ -1,6 +1,12 @@
 // Instructions: launch gazebo, and then run this file. An image of the the random forest created can be seen in the
 // paper "Real-Time Planning with Multi-Fidelity Models for Agile Flights in Unknown Environments [ICRA 2019]
 
+// If you want to visualize the markers in rviz, run first
+// rosrun tf static_transform_publisher 0.0 0.0 0.0 0.0 0.0
+// 0.0 1.0 map world 10
+// and then this file
+// rosrun acl_sim create_random_forest
+
 // Author: Jesus Tordesillas Torres
 
 #include <ros/ros.h>
@@ -8,6 +14,7 @@
 #include <std_srvs/Empty.h>
 #include <tf/transform_listener.h>
 #include <visualization_msgs/MarkerArray.h>
+#include <visualization_msgs/Marker.h>
 #include <deque>
 #include <Eigen/Dense>
 
@@ -227,6 +234,8 @@ int main(int argc, char** argv)
   ros::param::param<int>("~seed", seed, 0);
   ros::param::param<double>("~density", density, 0.1);
 
+  ros::Publisher marker_array_pub = nh.advertise<visualization_msgs::MarkerArray>("forest", 1);
+
   printf("SEED=%d\n", seed);
   printf("DENSITY=%f\n", density);
 
@@ -246,6 +255,7 @@ int main(int argc, char** argv)
   double usable_area = size.x() * size.y();
   int num_objects = static_cast<int>(std::floor(density * usable_area));
 
+  visualization_msgs::MarkerArray marker_array;
   double total_volume = 0;
   for (int i = 0; i < num_objects; ++i)
   {
@@ -281,10 +291,57 @@ int main(int argc, char** argv)
             new voxblox::Cylinder(position.cast<float>(), radius, height, voxblox::Color::Gray())));*/
 
     printf("SEED=%d\n", seed);
+
+    ///////////////////// THIS IS TO PUBLISH THE CYLINDERS AS MARKERS AND VISUALIZE THEM IN RVIZ
+
+    visualization_msgs::Marker marker;
+    // Set the frame ID and timestamp.  See the TF tutorials for information on these.
+    marker.header.frame_id = "/world";
+    marker.header.stamp = ros::Time::now();
+
+    // Set the namespace and id for this marker.  This serves to create a unique ID
+    // Any marker sent with the same namespace and id will overwrite the old one
+    marker.ns = "basic_shapes";
+    marker.id = 0;
+
+    // Set the marker action.  Options are ADD, DELETE, and new in ROS Indigo: 3 (DELETEALL)
+    marker.action = visualization_msgs::Marker::ADD;
+
+    // Set the pose of the marker.  This is a full 6DOF pose relative to the frame/time specified in the header
+    marker.pose.position.x = x;
+    marker.pose.position.y = y;
+    marker.pose.position.z = z;
+    marker.pose.orientation.x = 0.0;
+    marker.pose.orientation.y = 0.0;
+    marker.pose.orientation.z = 0.0;
+    marker.pose.orientation.w = 1.0;
+
+    // Set the scale of the marker -- 1x1x1 here means 1m on a side
+    marker.scale.x = 2 * radius;
+    marker.scale.y = 2 * radius;
+    marker.scale.z = height;
+
+    // Set the color -- be sure to set alpha to something non-zero!
+    marker.color.r = 0.0f;
+    marker.color.g = 1.0f;
+    marker.color.b = 0.0f;
+    marker.color.a = 1.0;
+
+    marker.id = i;
+
+    marker.type = visualization_msgs::Marker::CYLINDER;
+
+    marker_array.markers.push_back(marker);
+
+    //////////////////////
   }
 
   printf("Total Volume=%f\n", total_volume);
   printf("Usable_area=%f\n", usable_area);
+  ros::Duration(3).sleep();
+  printf("Publishing marker array");
+
+  marker_array_pub.publish(marker_array);
 
   ros::spin();
   return 0;
