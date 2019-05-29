@@ -2,7 +2,8 @@
 
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
     <xacro:property name="M_PI" value="3.1415926535897931" />
-  
+    <xacro:property name="ns" value="$(arg ns)" />
+    <xacro:property name="tf_prefix" value="$(arg tf_prefix)" />
     <!--
      The asus_camera_model macro only adds the model, it does not also add
      the openni gazebo plugin. See the 'asus_camera' macro below for that
