@@ -94,14 +94,14 @@
             <horizontal_fov>${90 * M_PI/180.0}</horizontal_fov>
             <image>
               <format>R8G8B8</format>
-<!--               <width>120</width>
+<!--               <width>120</width>  320, 240
               <height>90</height> -->
-              <width>320</width>
-              <height>240</height>
+              <width>120</width>
+              <height>90</height>
             </image>
             <clip>
               <near>0.06</near>
-              <far>10</far>
+              <far>10.0</far>  <!--this is the clipping distance for the RGB image. But somehow the depth image is clipped at 5 meters??-->
             </clip>
           </camera>
           <plugin name="${name}_camera_controller" filename="libgazebo_ros_openni_kinect.so">
