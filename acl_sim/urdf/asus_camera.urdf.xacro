@@ -96,8 +96,8 @@
               <format>R8G8B8</format>
 <!--               <width>120</width>  320, 240
               <height>90</height> -->
-              <width>120</width>
-              <height>90</height>
+              <width>320</width>
+              <height>240</height>
             </image>
             <clip>
               <near>0.06</near>
