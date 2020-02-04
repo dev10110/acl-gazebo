@@ -81,7 +81,8 @@ void GazeboCubeSpawner::spawnPrimitive(const std::string& name, const bool doCub
     _s << "<cylinder>\
                 <length>"
        << h << "</length>\
-                <radius>" << w << "</radius>\
+                <radius>"
+       << w << "</radius>\
             </cylinder>";
   }
   std::string geometryString = _s.str();
@@ -125,12 +126,15 @@ void GazeboCubeSpawner::spawnPrimitive(const std::string& name, const bool doCub
         <mass>"
       << mass << "</mass>\
         <inertia>\
-          <ixx>" << xx << "</ixx>\
+          <ixx>"
+      << xx << "</ixx>\
           <ixy>0.0</ixy>\
           <ixz>0.0</ixz>\
-          <iyy>" << yy << "</iyy>\
+          <iyy>"
+      << yy << "</iyy>\
           <iyz>0.0</iyz>\
-          <izz>" << zz << "</izz>\
+          <izz>"
+      << zz << "</izz>\
         </inertia>\
           </inertial>";
   }
@@ -151,7 +155,8 @@ void GazeboCubeSpawner::spawnPrimitive(const std::string& name, const bool doCub
               <ode>\
             <mu>"
       << mu1 << "</mu>\
-            <mu2>" << mu2 << "</mu2>\
+            <mu2>"
+      << mu2 << "</mu2>\
             <fdir1>0.000000 0.000000 0.000000</fdir1>\
             <slip1>0.000000</slip1>\
             <slip2>0.000000</slip2>\
@@ -165,8 +170,10 @@ void GazeboCubeSpawner::spawnPrimitive(const std::string& name, const bool doCub
               <ode>\
             <soft_cfm>0.000000</soft_cfm>\
             <soft_erp>0.200000</soft_erp>\
-            <kp>" << kp << "</kp>\
-            <kd>" << kd << "</kd>\
+            <kp>"
+      << kp << "</kp>\
+            <kd>"
+      << kd << "</kd>\
             <max_vel>100.000000</max_vel>\
             <min_depth>0.001000</min_depth>\
               </ode>\
@@ -241,7 +248,7 @@ int main(int argc, char** argv)
 
   // Seed is from 0 - 10 for this benchmark.
   std::srand(seed);
-  Eigen::Vector3d size(50.0, 50.0, 5.0);  // world size
+  Eigen::Vector3d size(15.0, 15.0, 5.0);  // world size
 
   // Free space around the edges (so we know we don't start in collision).
   Eigen::Vector3d free_space_bounds(2.0, 2.0, 2.0);
@@ -250,7 +257,7 @@ int main(int argc, char** argv)
   const double kMinHeight = 2.0;
   const double kMaxHeight = 5.0;
   const double kMinRadius = 0.25;
-  const double kMaxRadius = 1.0;
+  const double kMaxRadius = 0.3;
 
   double usable_area = size.x() * size.y();
   int num_objects = static_cast<int>(std::floor(density * usable_area));
