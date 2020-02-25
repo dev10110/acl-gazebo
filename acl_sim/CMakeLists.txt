@@ -1,6 +1,10 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(acl_sim)
 
+## Add support for C++11, supported in ROS Kinetic and newer
+add_definitions(-std=c++11)
+
+
 find_package(catkin)
 
 catkin_package()
@@ -31,7 +35,7 @@ catkin_package(
     gazebo_ros 
 )
 
-list(APPEND CMAKE_CXX_FLAGS "${GAZEBO_CXX_FLAGS}")
+#list(APPEND CMAKE_CXX_FLAGS "${GAZEBO_CXX_FLAGS}")
 
 #add_library(disable_physics SHARED ./src/disable_physics.cc)  
 #target_link_libraries(disable_physics ${GAZEBO_LIBRARIES})

@@ -24,6 +24,10 @@ class FakeSim:
     def __init__(self):
         self.state=State()
 
+        self.state.pos.x = rospy.get_param('~x', 0.0);
+        self.state.pos.y = rospy.get_param('~y', 0.0);
+        self.state.pos.z = rospy.get_param('~z', 0.0);
+
         self.state.quat.x = 0
         self.state.quat.y = 0
         self.state.quat.z = 0
@@ -84,8 +88,12 @@ class FakeSim:
 
 
         #self.gazebo_state.twist = data.twist
-        gazebo_state.reference_frame = "world" 
-        self.pubGazeboState.publish(gazebo_state)  
+
+        ## HACK TO NOT USE GAZEBO
+        # gazebo_state.reference_frame = "world" 
+        # self.pubGazeboState.publish(gazebo_state)  
+        ## END OF HACK TO NOT USE GAZEBO
+
 
 
         self.state.header.frame_id="world"
