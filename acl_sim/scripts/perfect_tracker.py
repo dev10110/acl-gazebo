@@ -90,8 +90,8 @@ class FakeSim:
         #self.gazebo_state.twist = data.twist
 
         ## HACK TO NOT USE GAZEBO
-        # gazebo_state.reference_frame = "world" 
-        # self.pubGazeboState.publish(gazebo_state)  
+        gazebo_state.reference_frame = "world" 
+        self.pubGazeboState.publish(gazebo_state)  
         ## END OF HACK TO NOT USE GAZEBO
 
 
