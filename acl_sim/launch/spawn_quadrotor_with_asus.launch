@@ -6,6 +6,7 @@
    <arg name="x" default="0.0"/>
    <arg name="y" default="0.0"/>
    <arg name="z" default="0.3"/>
+   <arg name="yaw" default="0.0"/>
 
    <include ns="$(arg name)" file="$(find acl_sim)/launch/spawn_quadrotor.launch">
      <arg name="name" default="$(arg name)"/>
@@ -14,6 +15,7 @@
      <arg name="x" default="$(arg x)"/>
      <arg name="y" default="$(arg y)"/>
      <arg name="z" default="$(arg z)"/>   
+     <arg name="yaw" default="$(arg yaw)"/>
    </include>
 
 </launch>

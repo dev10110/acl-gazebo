@@ -8,6 +8,7 @@
     <arg name="x" default="0" />
     <arg name="y" default="0" />
     <arg name="z" default="0" />
+    <arg name="yaw" default="0.0" />
     
 
     <!-- Spawn vehicle in Gazebo -->
@@ -20,6 +21,7 @@
             <arg name="x" value="$(arg x)"/>
             <arg name="y" value="$(arg y)"/>
             <arg name="z" value="$(arg z)"/>
+            <arg name="yaw" default="$(arg yaw)"/>
         </include>
 
          <!-- Camera to body tf -->
@@ -29,13 +31,15 @@
 
        
     <!-- Vicon to world tf -->
-    <node pkg="tf" type="static_transform_publisher" name="vicon2world" args="0 0 0 0 0 0 world vicon 100" />
+    <!-- The namespace is needed only for the multi-agent simulations. If not, each agent kills the node of the other one-->
+    <node ns="$(arg quad)" pkg="tf" type="static_transform_publisher" name="vicon2world" args="0 0 0 0 0 0 /world /vicon 100" />
 
     <!-- Start Perfect Tracker -->
 	<node ns="$(arg quad)" name="perfect_tracker" pkg="acl_sim" type="perfect_tracker.py" output="screen">
         <param name="x" value="$(arg x)"/>
         <param name="y" value="$(arg y)"/>
         <param name="z" value="$(arg z)"/>
+        <param name="yaw" value="$(arg yaw)"/>
     </node>
 
 </launch>

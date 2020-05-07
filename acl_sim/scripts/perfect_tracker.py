@@ -27,11 +27,16 @@ class FakeSim:
         self.state.pos.x = rospy.get_param('~x', 0.0);
         self.state.pos.y = rospy.get_param('~y', 0.0);
         self.state.pos.z = rospy.get_param('~z', 0.0);
+        yaw = rospy.get_param('~yaw', 0.0);
 
-        self.state.quat.x = 0
-        self.state.quat.y = 0
-        self.state.quat.z = 0
-        self.state.quat.w = 1
+        pitch=0.0;
+        roll=0.0;
+        quat = quaternion_from_euler(yaw, pitch, roll, 'szyx')
+
+        self.state.quat.x = quat[0]
+        self.state.quat.y = quat[1]
+        self.state.quat.z = quat[2]
+        self.state.quat.w = quat[3]
 
         self.pubGazeboState = rospy.Publisher('/gazebo/set_model_state', ModelState, queue_size=1)
         self.pubState = rospy.Publisher('state', State, queue_size=1, latch=True)
@@ -47,6 +52,14 @@ class FakeSim:
 
 
     def goalCB(self, data):
+
+        # print("  ")
+        # print("==================================")
+        # print("Goal received:")
+        # print(data.yaw)        
+        # print("State before:")
+        # print(self.state.quat)
+
         state = State()
         gazebo_state = ModelState()
         gazebo_state.model_name = self.name
@@ -101,6 +114,8 @@ class FakeSim:
         self.state.vel=data.vel
         self.state.quat=gazebo_state.pose.orientation
         self.pubState.publish(self.state)  
+        # print("State after:")
+        # print(self.state.quat)
 
     def pubTF(self, timer):
         br = tf.TransformBroadcaster()
@@ -129,7 +144,7 @@ if __name__ == '__main__':
             rospy.logfatal("This is tyipcally accomplished in a launch file.")
             rospy.logfatal("Command line: ROS_NAMESPACE=mQ01 $ rosrun quad_control joy.py")
         else:
-            print "Starting joystick teleop node for: " + ns
+            print "Starting perfect tracker node for: " + ns
             startNode()
     except rospy.ROSInterruptException:
         pass
