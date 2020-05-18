@@ -25,10 +25,11 @@ include_directories(${Boost_INCLUDE_DIR} ${catkin_INCLUDE_DIRS} ${GAZEBO_INCLUDE
 
 if("$ENV{ROS_DISTRO}" STREQUAL "melodic")
 	add_library(disable_physics src/disable_physics_melodic.cpp)
-elseif("$ENV{ROS_DISTRO}" STREQUAL "indigo")
-	add_library(disable_physics src/disable_physics_indigo.cpp)
+elseif("$ENV{ROS_DISTRO}" STREQUAL "kinetic")
+	add_library(disable_physics src/disable_physics_kinetic.cpp)
 else()
-	message(WARNING "Using the disable_physics indigo version")
+	message(WARNING "Using the disable_physics kinetic version")
+	add_library(disable_physics src/disable_physics_kinetic.cpp)
 endif() 
 
 target_link_libraries(disable_physics ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
