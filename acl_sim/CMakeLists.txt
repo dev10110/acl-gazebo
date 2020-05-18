@@ -23,7 +23,14 @@ find_package(gazebo REQUIRED)
 link_directories(${GAZEBO_LIBRARY_DIRS})
 include_directories(${Boost_INCLUDE_DIR} ${catkin_INCLUDE_DIRS} ${GAZEBO_INCLUDE_DIRS})
 
-add_library(disable_physics src/disable_physics.cpp)
+if("$ENV{ROS_DISTRO}" STREQUAL "melodic")
+	add_library(disable_physics src/disable_physics_melodic.cpp)
+elseif("$ENV{ROS_DISTRO}" STREQUAL "indigo")
+	add_library(disable_physics src/disable_physics_indigo.cpp)
+else()
+	message(WARNING "Using the disable_physics indigo version")
+endif() 
+
 target_link_libraries(disable_physics ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
 
 add_executable(create_random_forest src/create_random_forest.cpp)
