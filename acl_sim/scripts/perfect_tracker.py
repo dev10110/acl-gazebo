@@ -8,13 +8,15 @@ import roslib
 import rospy
 import math
 from snapstack_msgs.msg import QuadGoal, State
+from geometry_msgs.msg import Pose
 from gazebo_msgs.msg import ModelState
 import numpy as np
 from numpy import linalg as LA
 
-from tf.transformations import quaternion_from_euler, euler_from_quaternion
+from tf.transformations import quaternion_from_euler, euler_from_quaternion, quaternion_about_axis, quaternion_multiply
 
-from pyquaternion import Quaternion
+from visualization_msgs.msg import Marker
+
 import tf
 
 
@@ -31,7 +33,7 @@ class FakeSim:
 
         pitch=0.0;
         roll=0.0;
-        quat = quaternion_from_euler(yaw, pitch, roll, 'szyx')
+        quat = quaternion_from_euler(yaw, pitch, roll, 'rzyx')
 
         self.state.quat.x = quat[0]
         self.state.quat.y = quat[1]
@@ -39,6 +41,7 @@ class FakeSim:
         self.state.quat.w = quat[3]
 
         self.pubGazeboState = rospy.Publisher('/gazebo/set_model_state', ModelState, queue_size=1)
+        self.pubMarkerDrone = rospy.Publisher('marker', Marker, queue_size=1, latch=True)
         self.pubState = rospy.Publisher('state', State, queue_size=1, latch=True)
         self.timer = rospy.Timer(rospy.Duration(0.01), self.pubTF)
         name = rospy.get_namespace()
@@ -49,16 +52,22 @@ class FakeSim:
         self.state.header.frame_id="world"
         self.pubState.publish(self.state)  
 
+        pose=Pose()
+        pose.position.x=self.state.pos.x;
+        pose.position.y=self.state.pos.y;
+        pose.position.z=self.state.pos.z;
+        pose.orientation.x = quat[0]
+        pose.orientation.y = quat[1]
+        pose.orientation.z = quat[2]
+        pose.orientation.w = quat[3]
+
+        self.pubMarkerDrone.publish(self.getDroneMarker(pose));
+
+
 
 
     def goalCB(self, data):
 
-        # print("  ")
-        # print("==================================")
-        # print("Goal received:")
-        # print(data.yaw)        
-        # print("State before:")
-        # print(self.state.quat)
 
         state = State()
         gazebo_state = ModelState()
@@ -74,24 +83,20 @@ class FakeSim:
 
         drone_quaternion_with_yaw=[];
 
-        if(LA.norm(accel)>0.001 and LA.norm(np.cross(accel, axis_z))>0.0001):
+        if(LA.norm(accel)>0.000001 and LA.norm(np.cross(accel, axis_z))>0.0000001):
           norm_accel=LA.norm(accel)
           accel=accel/norm_accel
           axis=np.cross(accel, axis_z);
 
           dot=np.dot(accel,axis_z)
           angle=math.acos(dot)        
-          drone_quaternion = Quaternion(axis=axis, angle=-angle)
-
+          drone_quaternion = quaternion_about_axis(-angle, axis)# Quaternion(axis=axis, angle=-angle)
+          
           #Use the yaw from goal
-          euler =euler_from_quaternion((drone_quaternion[1], drone_quaternion[2], drone_quaternion[3], drone_quaternion[0]), 'szyx')
-          yaw=euler[0]
-          pitch=euler[1]
-          roll=euler[2]
-          drone_quaternion_with_yaw = quaternion_from_euler(data.yaw, pitch, roll, 'szyx')
+          drone_quaternion_with_yaw=quaternion_multiply(drone_quaternion,quaternion_from_euler(data.yaw, 0.0, 0.0, 'rzyx'))
 
         else: #Take only the yaw angle
-          drone_quaternion_with_yaw = quaternion_from_euler(data.yaw, 0, 0, 'szyx')
+          drone_quaternion_with_yaw = quaternion_from_euler(data.yaw, 0.0, 0.0, 'rzyx')
 
         gazebo_state.pose.orientation.x = drone_quaternion_with_yaw[0]
         gazebo_state.pose.orientation.y = drone_quaternion_with_yaw[1]
@@ -117,6 +122,8 @@ class FakeSim:
         # print("State after:")
         # print(self.state.quat)
 
+        self.pubMarkerDrone.publish(self.getDroneMarker(gazebo_state.pose));
+
     def pubTF(self, timer):
         br = tf.TransformBroadcaster()
         br.sendTransform((self.state.pos.x, self.state.pos.y, self.state.pos.z),
@@ -124,6 +131,24 @@ class FakeSim:
                          rospy.Time.now(),
                          self.name,
                          "vicon")
+
+    def getDroneMarker(self, pose):
+        marker=Marker();
+        marker.id=1;
+        marker.ns="mesh_"+self.name;
+        marker.header.frame_id="world"
+        marker.type=marker.MESH_RESOURCE;
+        marker.action=marker.ADD;
+
+        marker.pose=pose
+        marker.lifetime = rospy.Duration.from_sec(0.0);
+        marker.mesh_use_embedded_materials=True
+        marker.mesh_resource="package://acl_sim/meshes/quadrotor/quadrotor.dae"
+        marker.scale.x=1.0;
+        marker.scale.y=1.0;
+        marker.scale.z=1.0;
+        return marker 
+
 
 
              
