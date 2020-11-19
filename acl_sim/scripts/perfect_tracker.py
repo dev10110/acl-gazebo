@@ -7,7 +7,7 @@
 import roslib
 import rospy
 import math
-from snapstack_msgs.msg import QuadGoal, State
+from snapstack_msgs.msg import Goal, State
 from geometry_msgs.msg import Pose
 from gazebo_msgs.msg import ModelState
 import numpy as np
@@ -74,11 +74,11 @@ class FakeSim:
         gazebo_state.model_name = self.name
         axis_z=[0,0,1]
 
-        accel=[data.accel.x, data.accel.y, data.accel.z + 9.81];
+        accel=[data.a.x, data.a.y, data.a.z + 9.81];
 
-        gazebo_state.pose.position.x = data.pos.x
-        gazebo_state.pose.position.y = data.pos.y
-        gazebo_state.pose.position.z = data.pos.z
+        gazebo_state.pose.position.x = data.p.x
+        gazebo_state.pose.position.y = data.p.y
+        gazebo_state.pose.position.z = data.p.z
 
 
         drone_quaternion_with_yaw=[];
@@ -115,8 +115,8 @@ class FakeSim:
 
 
         self.state.header.frame_id="world"
-        self.state.pos=data.pos
-        self.state.vel=data.vel
+        self.state.pos=data.p
+        self.state.vel=data.v
         self.state.quat=gazebo_state.pose.orientation
         self.pubState.publish(self.state)  
         # print("State after:")
@@ -155,7 +155,7 @@ class FakeSim:
 
 def startNode():
     c = FakeSim()
-    rospy.Subscriber("goal", QuadGoal, c.goalCB)
+    rospy.Subscriber("goal", Goal, c.goalCB)
 
     rospy.spin()
 
